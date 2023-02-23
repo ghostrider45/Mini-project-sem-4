@@ -1,0 +1,22 @@
+body{
+    background-image:url(https://wallpapercave.com/wp/wp7728113.jpg);
+background-size: cover;
+}
+form{
+    display: flex;
+justify-content: center;
+padding-block:11%;
+font-size: larger;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+button{
+border-radius: 30%;
+border-color: black;
+background-color: antiquewhite;
+}
+table{
+    background-color: darksalmon;
+    margin-top: 10%;
+    height:30%;
+    width: 40%;
+}

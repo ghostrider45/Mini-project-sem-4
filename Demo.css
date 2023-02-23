@@ -1,0 +1,62 @@
+body{
+  background-image: url(digital_money.jpg);
+  background-size: cover;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+ 
+  .navbar a {
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 20%;
+   margin-top: 18px;
+  }
+  .subnav {
+    float: left;
+    overflow: hidden;
+    width: 23%;
+    padding: 14px 16px;
+  }
+  
+  .subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+  }
+  
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: rgb(255, 167, 167);
+  }
+  
+  .subnav-content {
+    display: none;
+    align-items: center;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  /* Style the subnav links */
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  .subnav:hover .subnav-content {
+    display: block;
+  }

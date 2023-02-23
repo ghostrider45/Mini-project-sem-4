@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(loginpage.jpeg);
+    background-size: cover;
+}
+.main {
+    width: 100%;
+    background: rgb(243, 231, 1);
+    background-size: cover;
+    height: 100%;
+
+}
+
+.navbar {
+    width: 800px;
+    height: 800px;
+    margin: auto;
+
+}
+
+.icon {
+    width: 600px;
+    float: left;
+    height: 70px;
+}
+
+.logo1 {
+    color: rgb(16, 1, 1);
+    font-family: lucida handwriting;
+    font-size: 25px;
+    padding-left: 50px;
+    float: left;
+    padding-top: 15px;
+}
+
+.menu {
+    width: 3000px;
+    float: left;
+    height: 200px;
+    padding-left: 300px;
+    padding-top: 6px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+ul li{
+    list-style: none;
+    margin-left: 80px;
+    margin-top: -60px;
+    font-size: 14px;
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(198, 21, 21);
+    font-family: aladin;
+    font-size: 17px;
+    font-weight: bold;
+    transition: .2s;
+}
+ul li a:hover{
+    color: orange;
+
+}
+.menu .fa{
+    margin-right: 12px;
+}
+.sub-menu3{
+    display: none;
+
+}
+.menu ul li:hover .sub-menu3{
+    display: block;
+    position: absolute;
+    background: red;
+    margin-top: 100px;
+    margin-right: 200px;
+}
+.menu ul li:hover .sub-menu3 ul
+{
+    display: block;
+    margin: 5px;
+}
+.menu ul li:hover .sub-menu3 ul li
+{
+    width: 150px;
+    padding: 20px;
+    text-align: left;
+}

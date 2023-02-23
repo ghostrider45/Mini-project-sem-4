@@ -1,0 +1,468 @@
+<link rel="license" href="http://www.opensource.org/licenses/mit-license/">
+<body id="form">
+  <form>
+    <header>
+      <span>
+        <img alt="logo" src="WhatsApp Image 2022-11-08 at 16.45.11.jpg" class="center logo" id="logo" title="Nido Machineries" draggable="false" style="-moz-user-select: none;">
+        <link rel="stylesheet" href="invoice.css">
+      </span>
+    </header> 
+    <article class="invoicebody">
+	    <div class="left_info">
+	      <input type="text" class="clientDetails" id="company_name"  placeholder="Company Name"><br>
+	      <input type="text" class="clientDetails" id="customer_name" placeholder="Address"><br>
+	      <input type="text" class="clientDetails" id="occupation"    placeholder="Contact Person"><br>
+	      <input type="text" class="clientDetails" id="afm"           placeholder="Contact No"><br>
+	      <input type="text" class="clientDetails" id="doy"           placeholder="Email">
+		</div>
+      <table class="meta" id="top_data_table">
+         <tbody>
+          <tr class="" id="invoice_number_row">
+            <th class="bold"><span class="invoice" id="invoice">Reference&nbsp;No</span></th> 
+            <td id="time"></td>
+          </tr>
+
+          <tr id="daterow">
+            <th class="bold"><span class="date" id="date">Date</span></th>
+            <td><span contenteditable=""><input type="date" id="theDate"></span></td>
+          </tr>
+
+          <tr class="" id="total_block">
+            <th class="bold"><span class="amount" id="amount">Ammout</span></th>
+            <td><span id="prefix">&#8377;</span><span></span></td>
+          </tr>
+
+        </tbody>
+      </table>
+	<div class="min_height">
+      <table class="inventory">
+        <thead>
+          <tr>
+            <th class="bold">
+              <span class="item" id="item">Equipment Name & Model</span>
+            </th>
+            <th class="bold">
+              <span class="description" id="description">HSN code & GST</span>
+            </th>
+            <th class="bold">
+              <span class="rate" id="rate">Unit Price</span>
+            </th>
+            <th class="bold">
+              <span class="quantity" id="quantity">Quantity</span>
+            </th>
+            <th class="bold">
+              <span class="price" id="price">Total Price</span>
+            </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>
+              <a class="cut" title="Remove Item">-</a>
+              <span contenteditable></span>
+            </td>
+            <td>
+              <span contenteditable></span>
+              </td>
+            <td>
+              <span data-prefix>&#8377;</span>
+              <span contenteditable>0.00</span>
+            </td>
+            <td>
+              <span contenteditable>1</span>
+            </td>
+            <td>
+              <span data-prefix>&#8377;</span><span>0.00</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a class="add noprint" title="Add Item">+</a>
+      <div class="left_btn">
+      		<button class="mah_btn" onclick="myprint()">Print</button>
+      		<button class="mah_btn" onClick="window.location.reload()">Reset</button>
+      </div>
+      <div class="right_tax">
+      <table class="balance" id="balance">
+        <tbody>
+
+          <tr>
+            <th class="bold">
+              <span class="subtotal" id="subtotal">Subtotal</span>
+            </th>
+            <td>
+              <span>&#8377;</span><span>0.00</span>
+            </td>
+          </tr>
+
+          <tr>
+            <th class="bold">
+              <span class="tax" id="tax" contenteditable="">Include GST&nbsp;</span>
+              <span contenteditable="">18</span>%
+            </th>
+            <td>
+              <span>&#8377;</span><span>0.00</span>
+            </td>
+          </tr>
+
+          <tr>
+            <th class="bold">
+              <span class="total" id="total">Total</span>
+            </th>
+            <td>
+              <span>&#8377; </span><span>0.00</span>
+            </td>
+          </tr>
+
+        </tbody>
+      </table> 
+      </div>     
+	</div>
+    </article>
+  </form>
+
+<div class="marathi info"contenteditable>
+		<p class="red" style="font-weight:700">TERMS & CONDITIONS :<br><br></p>
+		<p> PRICE/DELIVERY:<br> </p>
+		<p>The prices quoted are basic prices unpacked, ex-Bhiwandi  <br> <br></p>
+  <p> GST:<br> </p>
+		<p>Extra as applicable. Our GST No. "company GST Number" Maharashtra State.  <br> <br></p>
+  <p> PAYMENT:<br> </p>
+		<p>50% advance along with the Purchase Order & 50% against PI in the name of ‘E-trading’ an account payee cheque / draft payable at Mumbai, Maharashtra. <br> In case of cancellation of a confirmed order for any reason what so ever, 25% of the order value shall have to be paid by you to us, as damage.   <br> <br></p>
+  <p> FREIGHT, TRANSIT INSURANCE & UNLOADING:<br> </p>
+		<p>To be arranged by the customer OR If arranged by NIDO: Extra at actual plus GST. <br> Insurance: In the scope of buyer. Packing & Forwarding: 3 % Extra  <br> Unloading: In the scope of buyer. Buyer need to provide forklifts, crane or unskilled labor. <br> <br> </p>
+	<p> DELIVERY:<br> </p>	
+  <p>Exact schedule for dispatch will be notified at a later date. Delivery dates are approximate only & assume timely receipt of all information, test materials & advance.  <br> <br></p>
+  <p> WARRANTY:<br> </p>
+		<p> Limited onsite for product 12 months’ warranty (considering 8 hours of operations per day) against manufacturing defects against establishment of proof for same. <br> This warranty is void & E-trading will not be responsible for machine failure or performance if the customer chooses to use the equipment other than the product it was designed & tested for. <br> Our warranty does not extend to damages caused due to negligence or improper handing or erection by the buyer or any alterations carries out without our knowledge / approval. During this period, the items are to be returned to us at your cost. <br> The warranty will not cover normal wear & tear of the components, damages or losses caused during transit, & deterioration or rusting due to atmospheric conditions, damages resulting from fire, accidents, or lack of maintenance on the part of the customer. <br> Warranty on Third party components like motors, electric contractors & breakers, & pneumatic will be given by manufacturers. <br> <br></p>
+   <p> VALIDITY:<br> </p>
+		<p>Our offer is valid for your acceptance for a period of 30 Days from the date. Thereafter, it will be subject to confirmation by us. <br> <br></p>
+  <p> JURISDICTION:<br> </p>
+		<p>All terms subject to Mumbai, Maharashtra jurisdiction.<br> <br></p>
+  <p> IMAGES:<br> </p>
+  <p>Images are for representation purpose only. The actual product may vary in color, size & design<br> <br><br><br><br></p>
+</div>
+<script>
+
+(function () {
+    function checkTime(i) {
+        return (i < 10) ? "0" + i : i;
+    }
+
+    function startTime() {
+        var times = new Date(),
+        
+            hh = checkTime(times.getHours()),
+            mm = checkTime(times.getMinutes()),
+            ss = checkTime(times.getSeconds()),
+            yy = checkTime(times.getFullYear().toString(10).substring(2, 4)),
+            MM = checkTime(times.getMonth() + 1),
+            dd = checkTime(times.getDate())
+            ;
+        document.getElementById('time').innerHTML = yy + "" + MM + "" + dd + "" + hh + "" + mm + "" + ss ;
+        t = setTimeout(function () {
+            startTime1()
+        }, 500);
+    }
+    startTime();
+})();
+
+var date = new Date();
+
+var day = date.getDate();
+var month = date.getMonth() + 1;
+var year = date.getFullYear();
+
+if (month < 10) month = "0" + month;
+if (day < 10) day = "0" + day;
+
+var today = year + "-" + month + "-" + day;
+
+
+document.getElementById('theDate').value = today;
+  /* Shivving (IE8 is not supported, but at least it won't look as awful)
+/* ========================================================================== */
+
+(function (document) {
+	var
+	head = document.head = document.getElementsByTagName('head')[0] || document.documentElement,
+	elements = 'article aside audio bdi canvas data datalist details figcaption figure footer header hgroup mark meter nav output picture progress section summary time video x'.split(' '),
+	elementsLength = elements.length,
+	elementsIndex = 0,
+	element;
+
+	while (elementsIndex < elementsLength) {
+		element = document.createElement(elements[++elementsIndex]);
+	}
+
+	element.innerHTML = 'x<style>' +
+		'article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}' +
+		'audio[controls],canvas,video{display:inline-block}' +
+		'[hidden],audio{display:none}' +
+		'mark{background:#FF0;color:#000}' +
+	'</style>';
+
+	return head.insertBefore(element.lastChild, head.firstChild);
+})(document);
+
+/* Prototyping
+/* ========================================================================== */
+
+(function (window, ElementPrototype, ArrayPrototype, polyfill) {
+	function NodeList() { [polyfill] }
+	NodeList.prototype.length = ArrayPrototype.length;
+
+	ElementPrototype.matchesSelector = ElementPrototype.matchesSelector ||
+	ElementPrototype.mozMatchesSelector ||
+	ElementPrototype.msMatchesSelector ||
+	ElementPrototype.oMatchesSelector ||
+	ElementPrototype.webkitMatchesSelector ||
+	function matchesSelector(selector) {
+		return ArrayPrototype.indexOf.call(this.parentNode.querySelectorAll(selector), this) > -1;
+	};
+
+	ElementPrototype.ancestorQuerySelectorAll = ElementPrototype.ancestorQuerySelectorAll ||
+	ElementPrototype.mozAncestorQuerySelectorAll ||
+	ElementPrototype.msAncestorQuerySelectorAll ||
+	ElementPrototype.oAncestorQuerySelectorAll ||
+	ElementPrototype.webkitAncestorQuerySelectorAll ||
+	function ancestorQuerySelectorAll(selector) {
+		for (var cite = this, newNodeList = new NodeList; cite = cite.parentElement;) {
+			if (cite.matchesSelector(selector)) ArrayPrototype.push.call(newNodeList, cite);
+		}
+
+		return newNodeList;
+	};
+
+	ElementPrototype.ancestorQuerySelector = ElementPrototype.ancestorQuerySelector ||
+	ElementPrototype.mozAncestorQuerySelector ||
+	ElementPrototype.msAncestorQuerySelector ||
+	ElementPrototype.oAncestorQuerySelector ||
+	ElementPrototype.webkitAncestorQuerySelector ||
+	function ancestorQuerySelector(selector) {
+		return this.ancestorQuerySelectorAll(selector)[0] || null;
+	};
+})(this, Element.prototype, Array.prototype);
+
+/* Helper Functions
+/* ========================================================================== */
+
+function generateTableRow() {
+	var emptyColumn = document.createElement('tr');
+
+ 
+  emptyColumn.innerHTML = '<td><a class="cut" title="Remove Item">-</a><span contenteditable></span></td>' + 
+    '<td><span contenteditable></span></td>' + 
+    '<td><span data-prefix>₹</span><span contenteditable>0.00</span></td>' + 
+    '<td><span contenteditable>1</span></td>' + 
+    '<td><span data-prefix>₹</span><span>0.00</span></td>'; 
+    
+	return emptyColumn;
+}
+
+function parseFloatHTML(element) {
+	return parseFloat(element.innerHTML.replace(/[^\d\.\-]+/g, '')) || 0;
+}
+
+function parsePrice(number) {
+	return number.toFixed(2).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1,');
+}
+
+/* Update Number
+/* ========================================================================== */
+
+function updateNumber(e) {
+	var
+	activeElement = document.activeElement,
+	value = parseFloat(activeElement.innerHTML),
+	wasPrice = activeElement.innerHTML == parsePrice(parseFloatHTML(activeElement));
+
+	if (!isNaN(value) && (e.keyCode == 38 || e.keyCode == 40 || e.wheelDeltaY)) {
+		e.preventDefault();
+
+		value += e.keyCode == 38 ? 1 : e.keyCode == 40 ? -1 : Math.round(e.wheelDelta * 0.025);
+		value = Math.max(value, 0);
+
+		activeElement.innerHTML = wasPrice ? parsePrice(value) : value;
+	}
+
+	updateInvoice();
+}
+
+/* Update Invoice
+/* ========================================================================== */
+
+function updateInvoice() {
+	var total = 0;
+	var cells, price, total, a, i;
+
+	// update inventory cells
+	// ======================
+
+	for (var a = document.querySelectorAll('table.inventory tbody tr'), i = 0; a[i]; ++i) {
+		// get inventory row cells
+		cells = a[i].querySelectorAll('span:last-child');
+
+		// set price as cell[2] * cell[3]
+		price = parseFloatHTML(cells[2]) * parseFloatHTML(cells[3]);
+
+		// add price to total
+		total += price;
+
+		// set row total
+		cells[4].innerHTML = price;
+	}
+
+	// update balance cells
+	// ====================
+
+  // get label cells
+  label_cells = document.querySelectorAll('table.balance th span:last-child');
+  tax_rate = label_cells[1].innerHTML/100;
+
+	// get balance cells
+	cells = document.querySelectorAll('table.balance td:last-child span:last-child');
+
+	// set total
+	cells[0].innerHTML = total;
+
+  // set tax
+  cells[1].innerHTML = parsePrice(total * tax_rate);
+
+	// set balance and meta balance
+	cells[2].innerHTML = document.querySelector('table.meta tr:last-child td:last-child span:last-child').innerHTML = parsePrice(total + parseFloatHTML(cells[1]));
+
+	// update prefix formatting
+	// ========================
+
+	var prefix = document.querySelector('#prefix').innerHTML;
+	for (a = document.querySelectorAll('[data-prefix]'), i = 0; a[i]; ++i) a[i].innerHTML = prefix;
+
+	// update price formatting
+	// =======================
+
+	for (a = document.querySelectorAll('span[data-prefix] + span'), i = 0; a[i]; ++i) if (document.activeElement != a[i]) a[i].innerHTML = parsePrice(parseFloatHTML(a[i]));
+}
+
+/* On Content Load
+/* ========================================================================== */
+
+function onContentLoad() {
+	updateInvoice();
+
+	var
+	input = document.querySelector('input'),
+	image = document.querySelector('img');
+
+	function onClick(e) {
+		var element = e.target.querySelector('[contenteditable]'), row;
+
+		element && e.target != document.documentElement && e.target != document.body && element.focus();
+
+		if (e.target.matchesSelector('.add')) {
+			document.querySelector('table.inventory tbody').appendChild(generateTableRow());
+		}
+		else if (e.target.className == 'cut') {
+			row = e.target.ancestorQuerySelector('tr');
+
+			row.parentNode.removeChild(row);
+		}
+
+		updateInvoice();
+	}
+
+	function onEnterCancel(e) {
+		e.preventDefault();
+
+		image.classList.add('hover');
+	}
+
+	function onLeaveCancel(e) {
+		e.preventDefault();
+
+		image.classList.remove('hover');
+	}
+
+	function onFileInput(e) {
+		image.classList.remove('hover');
+
+		var
+		reader = new FileReader(),
+		files = e.dataTransfer ? e.dataTransfer.files : e.target.files,
+		i = 0;
+
+		reader.onload = onFileLoad;
+
+		while (files[i]) reader.readAsDataURL(files[i++]);
+	}
+
+	function onFileLoad(e) {
+		var data = e.target.result;
+
+		image.src = data;
+	}
+
+	if (window.addEventListener) {
+		document.addEventListener('click', onClick);
+
+		document.addEventListener('mousewheel', updateNumber);
+		document.addEventListener('keydown', updateNumber);
+
+		document.addEventListener('keydown', updateInvoice);
+		document.addEventListener('keyup', updateInvoice);
+
+		input.addEventListener('focus', onEnterCancel);
+		input.addEventListener('mouseover', onEnterCancel);
+		input.addEventListener('dragover', onEnterCancel);
+		input.addEventListener('dragenter', onEnterCancel);
+
+		input.addEventListener('blur', onLeaveCancel);
+		input.addEventListener('dragleave', onLeaveCancel);
+		input.addEventListener('mouseout', onLeaveCancel);
+
+		input.addEventListener('drop', onFileInput);
+		input.addEventListener('change', onFileInput);
+	}
+}
+
+window.addEventListener && document.addEventListener('DOMContentLoaded', onContentLoad);
+
+//------------------------------------------
+
+//------------------------------------------
+
+function serial_file() {
+	document.getElementById("serial").value = Date.now();
+}
+
+function un_serial_file() {
+	document.getElementById("serial").value = "";
+}
+//---------------------------------------------------------
+
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+
+if(dd<10) {
+    dd='0'+dd;
+} 
+
+if(mm<10) {
+    mm='0'+mm;
+} 
+
+
+
+today = dd+'/'+mm+'/'+yyyy;
+today_form = yyyy+'-'+dd+'-'+mm+' ';
+var serial = Date.now();
+
+//-----------------------------------------------------
+function myprint() {
+    window.print();
+}
+//-----------------------------------------------------
+</script>
